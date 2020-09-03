@@ -1,6 +1,9 @@
 /CodeWars.iml
 /.idea/
-
+/out/*
+# ----------------------
+# Recommended extensions
+# ----------------------
 # Compiled class file
 *.class
 
