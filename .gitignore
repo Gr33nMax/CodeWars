@@ -1,6 +1,6 @@
 /CodeWars.iml
 /.idea/
-/out
+/out/**
 # ----------------------
 # Recommended extensions
 # ----------------------
