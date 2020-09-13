@@ -24,3 +24,25 @@ public class Persist {
         return multiRes;
     }
 }
+
+/* Best Practices:
+1. Recursive solution
+public static int persistence(long n) {
+    long m = 1, r = n;
+    if (r / 10 == 0)
+      return 0;
+    for (r = n; r != 0; r /= 10)
+      m *= r % 10;
+    return persistence(m) + 1;
+}
+*
+2. Functional solution
+public static int persistence(long n) {
+    int times = 0;
+    while (n >= 10) {
+      n = Long.toString(n).chars().reduce(1, (r, i) -> r * (i - '0'));
+      times++;
+    }
+    return times;
+}
+*/
